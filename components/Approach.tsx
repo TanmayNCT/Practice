@@ -12,10 +12,8 @@ function Approach() {
       </h1>
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center gap-4">
         <Card
-          title="Planning and Strategy"
-          des="We'll collaborate to map out your website's goals, target audience, 
-                            and key functionalities. We'll discuss things like site structure, 
-                            navigation, and content requirements."
+          title="Creating Intuitive User Interfaces"
+          des="I specialize in crafting visually appealing and intuitive user interfaces (UI) that prioritize usability and engagement."
           icon={<AceternityIcon order="Phase 1" />}
         >
           <CanvasRevealEffect
@@ -24,10 +22,8 @@ function Approach() {
           />
         </Card>
         <Card
-          title="Development & Progress Update"
-          des="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+          title="Building Responsive and Accessible Websites"
+          des="I develop responsive websites using modern frontend frameworks like React, ensuring accessibility and inclusivity for all users."
           icon={<AceternityIcon order="Phase 2" />}
         >
           <CanvasRevealEffect
@@ -41,10 +37,8 @@ function Approach() {
           />
         </Card>
         <Card
-          title="Developemnt & Launch"
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          title="Optimizing Frontend Performance"
+          des="I optimize website performance through efficient coding practices and asset management, prioritizing speed and responsiveness."
           icon={<AceternityIcon order="Phase 3" />}
         >
           <CanvasRevealEffect

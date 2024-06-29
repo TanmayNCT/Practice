@@ -8,7 +8,7 @@ import Lottie from "react-lottie";
 
 import { cn } from "@/utils/cn";
 import { BackgroundGradientAnimation } from "./GradientBg";
-import { GlobeDemo } from "./GridGlobe";
+import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";
 
@@ -52,8 +52,14 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Redux", "3D Web Development", "Webpack"];
-  const rightLists = ["Leaflet", "MUI", "SSL", "NGINX"];
+  const leftLists = [
+    "ReactJS",
+    "Redux",
+    "Javscript",
+    "HTML, CSS",
+    "3D Web devlopment",
+  ];
+  const rightLists = ["Leaflet", "MUI", "SSL", "NGINX", "Webpack"];
 
   const [copied, setCopied] = useState(false);
 
@@ -122,7 +128,9 @@ export const BentoGridItem = ({
         <div
           className={cn(
             titleClassName,
-            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
+            `group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10 ${
+              id == 3 && "items-center"
+            }`
           )}
         >
           {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
@@ -138,13 +146,13 @@ export const BentoGridItem = ({
           </div>
 
           {/* for the github 3d globe */}
-          {id === 2 && <GlobeDemo />}
+          {id === 2 && <GridGlobe />}
 
           {/* Tech stack list div */}
           {id === 3 && (
-            <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
+            <div className="flex gap-1 lg:gap-5 w-fit relative">
               {/* tech stack lists */}
-              <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
+              <div className="flex flex-col gap-2 md:gap-2 lg:gap-7">
                 {leftLists.map((item, i) => (
                   <span
                     key={i}
